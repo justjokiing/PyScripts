@@ -14,7 +14,7 @@ Function 'Color()'-
 Function 'DeColor()'-
   MUST ALSO HAVE COLOR FUNCTION
   If paramater 'word' is not used, it finds the default bash color codes and prints them as the colors.
-    May add extra '\', function is best used to just print outputs. 
+    May add extra '\\', function is best used to just print outputs. 
   If the word parameter is used, it replaces the 'm' in the bash color code with the more general word for the color, as the color.
     Only identifies the general colors. 
   Great for .bashrc translation. 
