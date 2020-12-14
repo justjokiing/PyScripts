@@ -21,7 +21,7 @@ colorsR = {}
 for i in range(len(colors)):
 	colorsR.update({list(colors.values())[i]:list(colors.keys())[i]})
 
-def ColorDec(strng, colored = 0):
+def DeColor(strng, colored = 0):
 	end = ""
 	color = ''
 	h = 0
