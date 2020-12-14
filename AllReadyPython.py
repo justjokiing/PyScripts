@@ -99,16 +99,9 @@ LoggedInUser = os.getlogin()
 Programs = ["FireFox","Pluma","Geany","Exit"]
 	
 def FireFox():
-	subprocess.run(['su',LoggedInUser,'-c','firefox https://1332970.netacad.com/courses/1035863'+"&"])
+	subprocess.run(['su',LoggedInUser,'-c','firefox '+"&"])
 def Pluma():
-	try:
-		subprocess.run(['su',LoggedInUser,"-c",'pluma '+mountpoint+"/Python/Netacad/*.txt"+"&"])
-	except NameError:
-		defaultMount = '/mnt'
-		mountpoint = input("\nEnter an absolute mount point or press enter for default path["+CRED+defaultMount+CEND+"]: ")
-		if mountpoint == "":
-			mountpoint = defaultMount
-		subprocess.run(['su',LoggedInUser,"-c",'pluma '+mountpoint+"/Python/Netacad/*.txt"+"&"])
+	subprocess.run(['su',LoggedInUser,"-c",'pluma '+"&"])
 def Geany():
 	subprocess.run(['su',LoggedInUser,"-c",'geany '+"&"])
 def Exit():
