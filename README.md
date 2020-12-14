@@ -13,10 +13,8 @@ Function 'Color()'-
   Colors a certain string using bash color codes. It can do bright or background colors.
 Function 'DeColor()'-
   MUST ALSO HAVE COLOR FUNCTION
-  If paramater 'word' is not used, it finds the default bash color codes and prints them as the colors.
+  it finds the default bash color codes and prints them as the colors.
     May add extra '\\', function is best used to just print outputs. 
-  If the word parameter is used, it replaces the 'm' in the bash color code with the more general word for the color, as the color.
-    Only identifies the general colors. 
   Great for .bashrc translation. 
 
 --Mount&Open.py--     {Requires Root}
