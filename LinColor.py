@@ -21,7 +21,7 @@ colorsR = {}
 for i in range(len(colors)):
 	colorsR.update({list(colors.values())[i]:list(colors.keys())[i]})
 
-def DeColor(strng, colored = 0):
+def DeColor(strng, word = 0):
 	end = ""
 	color = ''
 	h = 0
@@ -29,7 +29,7 @@ def DeColor(strng, colored = 0):
 		if i == len(strng)-1 and strng[i] != 'm':
 			end += strng[i]
 		elif strng[i] == "m" or '[':
-			if colored == 0:
+			if word != 0:
 				if strng[i] == 'm' and i not in [0,1]:
 					end += "'"+Color(colorsR[strng[i-1:i+1]].upper(),colorsR[strng[i-1:i+1]])+"'"
 				else:
